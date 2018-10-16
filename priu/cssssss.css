@@ -1,0 +1,290 @@
+@charset "UTF-8";
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+head{
+    background: rgb(170, 170, 170);
+}
+h1{
+    font-family: 'Charmonman', cursive;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(247, 0, 255, 0.616);
+    font-size: 70px;
+    position: absolute;
+    top:-7px;
+    left: 500px;
+}
+
+body{
+    background: rgb(170, 170, 170) ;
+    color: black;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    width: 400px;
+    height: 400px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 500px ;
+    top: 70px ;
+}
+header#cabecalho{
+    background: rgb(170, 170, 170);
+    border-bottom: 1px #606060 solid;
+    top:-20px;
+    left: 0;
+    height: 180px;
+    width: 1300px;
+}
+
+div#interface{
+    width: 1300px;
+    height: 750px;
+    background: white;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    color:black;
+    text-decoration: none;
+}
+figure.capa_review{
+    position: relative;
+    border: 8px solid #274166;
+    box-shadow: 1px 1px 4px black;
+    width: 400px;
+}
+figure.capa_review img{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+figure.capa_review figcaption{
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    background: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+figure.capa_review:hover figcaption{
+    opacity: 1;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position:absolute;
+    top:160px;
+    left:-30px;
+    right:-35px;
+    width:100%;
+    height:20px;
+}
+li#home{
+    display: inline-block;
+    background-color: #ff0068;
+    padding: 8px;
+    margin: -3px;
+    transition: background-color 1s;
+    color:white;
+    width: 205px;
+}
+li#reviews{
+    display: inline-block;
+    background-color: #274166;
+    padding: 8px;
+    margin: -3px;
+    transition: background-color 1s;
+    color:white;
+    width: 205px;
+}
+li#lendas{
+    display: inline-block;
+    background-color: #00cc7a;
+    padding: 8px;
+    margin: -3px;   
+    transition: background-color 1s;
+    color:white;
+    width: 205px;
+}
+li#poemas{
+    display: inline-block;
+    background-color: #e28907;
+    padding: 8px;
+    margin: -3px;
+    transition: background-color 1s;
+    color:white;
+    width: 205px;
+}
+li#tirinhas{
+    display: inline-block;
+    background-color: #8200bf;
+    padding: 8px;
+    margin: -3px;
+    transition: background-color 1s;
+    color:white;
+    width: 205px;
+}
+li#curadores{
+    display: inline-block;
+    background-color: #745ed6;
+    padding: 8px;
+    margin: -3px;
+    transition: background-color 1s;
+    color:white;
+    width: 208px;
+}
+li#home:hover{
+    background-color: #800033;
+}
+li#reviews:hover{
+    background-color: #1a2c46;
+}
+li#lendas:hover{
+    background-color: #00834e;
+}
+li#poemas:hover{
+    background-color: #945b05;
+}
+li#tirinhas:hover{
+    background-color: #5b0085;
+}
+li#curadores:hover{
+    background-color: #44377e;
+}
+nav#menu a {
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav#menu a:not(:first-child) {display: none;}
+    nav#menu a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  
+ 
+
+section#corpo{
+    background: white;
+    display:block;
+    position: absolute;
+    top:350px;
+    width:600px;
+    float:left;
+}
+aside#lateral{
+    background: white;
+    display: block;
+    left: -200px;
+    right: -200px;
+    width:300px;
+    float: right;
+}
+nav#opcoes_reviews{
+    display: block;
+
+}
+nav#opcoes_reviews ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 100px;
+    left:-35px;
+    right:-35px;
+    width:800px;
+    height:340px;
+
+
+}
+/* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 980px) {
+
+	header#cabecalho {
+		width: 94%;
+	}
+	section#corpo {
+		width: 65%;
+	}
+	aside#lateral {
+		width: 30%;
+    }
+}
+@media screen and (max-width: 700px) {
+
+	section#corpo {
+		width: auto;
+		float: none;
+	}
+	aside#lateral {
+		width: auto;
+		float: none;
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+    section#corpo{
+		height: auto;
+	}
+	header#cabecalho {
+		font-size: 24px;
+	}
+	aside#lateral {
+		display: none;
+	}
+
+}
+img#capa_livro {
+    position: relative;
+    float: left;
+    margin:0 20px 10px 0;
+}
+
+
+div#box-toggle{
+    background: white;
+    display:block;
+    position:absolute;
+  
+    height: 600px;
+    width:600px;
+    float:left;
+
+}
+div#recomendacoes{
+    display: block;
+}
+div#recomendacoes{
+    background: #dddddd;
+    position: relative;
+    height: 500px;
+}
+img.perfil{
+    position: relative;
+    float: left;
+    margin:0 20px 10px 0;
+}
+h2.nome_adm{
+    width: 30%;
+}
+section#corpo_manga{
+    background: white;
+    display:block;
+    position: absolute;
+    top:350px;
+    width:600px;
+    height: 600px;
+    float:left;
+}
